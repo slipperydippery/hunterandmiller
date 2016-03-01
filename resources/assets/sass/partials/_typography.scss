@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Maven+Pro:400,500);
+
+/* Fonts */
+@font-face {
+  font-family: 'maven_pro_light200';
+  src: url("../fonts/mavenprolight-200-webfont.eot");
+  src: url("../fonts/mavenprolight-200-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/mavenprolight-200-webfont.woff") format("woff"), url("../fonts/mavenprolight-200-webfont.ttf") format("truetype"), url("../fonts/mavenprolight-200-webfont.svg#maven_pro_light200") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'maven_pro_light300';
+  src: url("../fonts/mavenprolight-300-webfont.eot");
+  src: url("../fonts/mavenprolight-300-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/mavenprolight-300-webfont.woff") format("woff"), url("../fonts/mavenprolight-300-webfont.ttf") format("truetype"), url("../fonts/mavenprolight-300-webfont.svg#maven_pro_light300") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+h1 {
+  font-family: maven_pro_light200;
+  font-weight: 200;
+  font-size: 3rem;
+  line-height: 1.2em;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+ h1.home {
+   font-size: 4.8rem;
+   margin-top: 4rem;
+ }
+
+.ampersand {
+  font-family: 'Lato';
+  font-size: 0.7em;
+}
+
+@media only screen and (max-width: 640px) {
+
+  h1.home {
+    font-size: 2.7em;
+  }
+
+}
+
+h3 {
+  line-height: 1em;
+  color: #7d7d7d;
+  margin: 1.5em 0 0 0;
+//  text-transform: uppercase;
+}

@@ -1,0 +1,52 @@
+.vimeo-container {
+  position: relative;
+  width:100%;
+  height:0;
+  padding-bottom:56.25%;
+  overflow:hidden;
+  margin:3rem auto;
+}
+
+.vimeo {
+  width:100%;
+  height:180%;
+  position:absolute;
+  left:0;
+  top:-40%;
+}
+
+.choice {
+  position: absolute;
+  display: none;
+  top: 0;
+  height: 100%;
+  width: 30%;
+
+  text-align: center;
+
+  background: rgba(255,0,0,0.2);
+
+  z-index: 100;
+
+}
+
+.choice-1 {
+  left: 0;
+}
+
+.choice-2 {
+  right: 0;
+}
+
+.vimeo-controls {
+  .button {
+    border-radius: .5rem !important;
+    background: black;
+    display: inline-block;
+    margin: 0 auto;
+  }
+  display: inline-block;
+  text-alignn: center;
+  margin: 0 auto;
+
+}

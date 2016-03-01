@@ -1,0 +1,24 @@
+/*---------- Home Page ----------*/
+.logo_cont {
+  margin: 4em auto 0;
+  max-width: 29rem;
+  text-align: center;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.logo_cont img {
+  display: inline-block;
+  height: 100%;
+  z-index: 100;
+}
+
+.intro_story {
+  position: relative;
+  margin: 8em auto 2em;
+  padding: 1em;
+}
+
+.tagline {
+  margin-bottom: 0.4em;
+}
