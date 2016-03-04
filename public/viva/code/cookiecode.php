@@ -82,7 +82,8 @@
 		$nextCrumber = $breadCrumber['parent'];
 		$nextCrumber = $$nextCrumber;
 		$breadcrumb = ' <a href="' . $nextCrumber['adress'] . '">' . $nextCrumber['title'] . '</a> / ' . $breadcrumb;
-		$breadCrumber = $$breadCrumber['parent'];
+		$breadCrumber = $breadCrumber['parent'];
+		$breadCrumber = $$breadCrumber;
 	}
 
 	function nextlocation ($parent, $current)
