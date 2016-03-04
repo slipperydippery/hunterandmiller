@@ -6,7 +6,6 @@
 
 	require_once './code/pages.php';
 	$current = $$current;
-	echo('test1');
 	$parent = $current['parent'];
 	$parent = $$parent;	
 
