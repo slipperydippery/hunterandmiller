@@ -79,7 +79,8 @@
 
 	while($breadCrumber['parent'] !== 'top')
 	{
-		$nextCrumber = $$breadCrumber['parent'];
+		$nextCrumber = $breadCrumber['parent'];
+		$nextCrumber = $$nextCrumber;
 		$breadcrumb = ' <a href="' . $nextCrumber['adress'] . '">' . $nextCrumber['title'] . '</a> / ' . $breadcrumb;
 		$breadCrumber = $$breadCrumber['parent'];
 	}
