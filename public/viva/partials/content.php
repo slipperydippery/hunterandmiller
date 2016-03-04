@@ -6,7 +6,9 @@
 
 	require_once './code/pages.php';
 	$current = $$current;
-	$parent = $$current['parent'];	
+	echo('test1');
+	$parent = $current['parent'];
+	$parent = $$parent;	
 
 	require './code/cookiecode.php';
 	pushcookie($parent['cookiecode'], $current['cookiecode']);
