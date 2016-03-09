@@ -12,7 +12,7 @@
 		}
 	</script>
 
-    <script type="text/javascript" src="code/js/jquerymin.js"></script>
+    <script type="text/javascript" src="code/js/jquery-2.2.1.js"></script>
 	<script type="text/javascript" src="code/js/app.js"></script>
 	<script type="text/javascript" src="code/js/vimeo.js"></script>
 
