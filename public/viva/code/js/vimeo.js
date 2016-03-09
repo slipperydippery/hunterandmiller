@@ -94,6 +94,7 @@ $(function() {
 
     // Helper function for sending a message to the player
     function post(action, value) {
+    	console.log('post function. action: ' + action + ', value: ' + value );
         var data = {
             method: action
         };
