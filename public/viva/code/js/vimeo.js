@@ -1,7 +1,4 @@
 $(function() {
-    console.log(window.frames);
-
-    console.log('1');
     var player = $('iframe.vimeo');
     console.log(player);
     var playerOrigin = '*';
@@ -9,9 +6,8 @@ $(function() {
 
     // Listen for messages from the player
     if (window.addEventListener) {
-    	console.log('window.addEventListener triggered');
         window.addEventListener('message', onMessageReceived, false);
-        console.log('window.addEventListener completed');
+        console.log('window.addEventListener -onMessageReceived- ');
     }
     else {
     	console.log('addEventListener-else; atach event');
@@ -57,49 +53,6 @@ $(function() {
         }
     }
 
-    // Call the API when a button is pressed
-    $('button').on('click', function() {
-        post($(this).text().toLowerCase());
-    });
-
-    $('.playclick').on('click', function(){
-    	console.log('play');
-        $('.vim-overlay').css("left", -10000);
-        $('.vim-overlay').css("opacity", 0);
-        post('play');
-    });   
-
-    $('.replayclick').on('click', function(){
-    	console.log('replay');
-        $('.vim-overlay').css("left", -10000).delay(2000);
-        $('.vim-overlay').css("opacity", 0);
-        post('unload');
-        setTimeout("post('play')", 200);
-        
-    });        
-
-    $('img.play').on('click', function(){
-    	console.log('play');
-        $('.vim-overlay').css("left", -10000);
-        $('.vim-overlay').css("opacity", 0);
-        post('play');
-    });
-
-    $('img.pause').on('click', function(){
-        post('pause');
-    });
-
-    $('.vim-post-controls--replay').on('click', function(){
-        $('.vim-overlay').css("left", -10000);
-        $('.vim-overlay').css("opacity", 0);
-        $('.vim-post-controls--play').css("left", 0);
-        post('play');
-    });
-
-    $('.vim-overlay').on('click', function () {
-        // post('play');
-    });
-
     // Helper function for sending a message to the player
     function post(action, value) {
     	console.log('post() action: ' + action + ', value: ' + value );
@@ -128,9 +81,9 @@ $(function() {
         post('addEventListener', 'playProgress');
         if (current_visited == false)
         {
-        	console.log('ready to play - current_visited == false');
+        	console.log('onReady() page has not yet been visited, so: autoplay');
             post('play');   
-            console.log('should be playing')
+            console.log('onReady() should be playing')
         }
     }
 
@@ -164,4 +117,47 @@ $(function() {
         }
         status.text(data.seconds + 's played');
     }
+
+    // Call the API when a button is pressed
+    $('button').on('click', function() {
+        post($(this).text().toLowerCase());
+    });
+
+    $('.playclick').on('click', function(){
+        console.log('play');
+        $('.vim-overlay').css("left", -10000);
+        $('.vim-overlay').css("opacity", 0);
+        post('play');
+    });   
+
+    $('.replayclick').on('click', function(){
+        console.log('replay');
+        $('.vim-overlay').css("left", -10000).delay(2000);
+        $('.vim-overlay').css("opacity", 0);
+        post('unload');
+        setTimeout("post('play')", 200);
+        
+    });        
+
+    $('img.play').on('click', function(){
+        console.log('play');
+        $('.vim-overlay').css("left", -10000);
+        $('.vim-overlay').css("opacity", 0);
+        post('play');
+    });
+
+    $('img.pause').on('click', function(){
+        post('pause');
+    });
+
+    $('.vim-post-controls--replay').on('click', function(){
+        $('.vim-overlay').css("left", -10000);
+        $('.vim-overlay').css("opacity", 0);
+        $('.vim-post-controls--play').css("left", 0);
+        post('play');
+    });
+
+    $('.vim-overlay').on('click', function () {
+        // post('play');
+    });
 });
