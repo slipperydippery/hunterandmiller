@@ -20,6 +20,7 @@ $(function() {
 
     // Handle messages received from the player
     function onMessageReceived(event) {
+        console.log('onMessageReceived: (OMR)');
     	console.log('OMR- started with event: ');
         console.log(event);
         // Handle messages from the vimeo player only
@@ -101,26 +102,27 @@ $(function() {
 
     // Helper function for sending a message to the player
     function post(action, value) {
-    	console.log('post function. action: ' + action + ', value: ' + value );
+    	console.log('post() action: ' + action + ', value: ' + value );
         var data = {
             method: action
         };
         if (value) {
             data.value = value;
         }
-        console.log('post- data: ');
+        console.log('post() data: ');
         console.log(data);
 
         var message = JSON.stringify(data);
-        console.log('posting message to player 0:');
+        console.log('post() postMessage to player[0].contentWindow');
+        console.log('post() player[0]:')
         console.log(player[0]);
-        console.log('player[0].contentWindow: ');
+        console.log('post() player[0].contentWindow:');
         console.log(player[0].contentWindow);
         player[0].contentWindow.postMessage(data, playerOrigin);
     }
 
     function onReady() {
-        console.log('ready -onReady() ');
+        console.log('onReady(), posting 3 addEventListeners, then posting -play- ');
         post('addEventListener', 'pause');
         post('addEventListener', 'finish');
         post('addEventListener', 'playProgress');
