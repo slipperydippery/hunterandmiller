@@ -4,16 +4,17 @@ $(function() {
     console.log(player);
     var playerOrigin = '*';
     var status = $('.status');
+    var iframe = document.getElementById("vimeoiframe");
 
     // Listen for messages from the player
-    if (window.addEventListener) {
+    if (iframe.addEventListener) {
     	console.log('window.addEventListener triggered');
-        window.addEventListener('message', onMessageReceived, false);
+        iframe.addEventListener('message', onMessageReceived, false);
         console.log('window.addEventListener completed');
     }
     else {
     	console.log('message-else');
-        window.attachEvent('onmessage', onMessageReceived, false);
+        iframe.attachEvent('onmessage', onMessageReceived, false);
     }
 
     // Handle messages received from the player
