@@ -3,7 +3,7 @@
 	<link rel="stylesheet" href="https://www.vivazorggroep.nl/css/20694426/e2967677dc54ad387d485fbad1231bce.css" type="text/css"/>
 	<link rel="stylesheet" href="code/css/wwstyle.css" type="text/css"/>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript" src="code/js/jquery.min.js"></script>
 	<script type="text/javascript" src="code/js/app.js"></script>
 	<script type="text/javascript" src="code/js/vimeo.js"></script>
 
