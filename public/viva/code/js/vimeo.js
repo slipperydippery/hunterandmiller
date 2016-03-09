@@ -33,7 +33,8 @@ $(function() {
         }
 
         var data = JSON.parse(event.data);
-        console.log('OMR-data parse to JSON: ' + data);
+        console.log('OMR-data parse to JSON: ');
+         console.log(data);
 
         switch (data.event) {
             case 'ready':
