@@ -21,6 +21,7 @@ $(function() {
     	console.log('message received');
         // Handle messages from the vimeo player only
         if (!(/^https?:\/\/player.vimeo.com/).test(event.origin)) {
+        	console.log('false origin');
             return false;
         }
 
