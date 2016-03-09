@@ -7,14 +7,17 @@ $(function() {
 
     // Listen for messages from the player
     if (window.addEventListener) {
+    	console.log('message');
         window.addEventListener('message', onMessageReceived, false);
     }
     else {
+    	console.log('message-else');
         window.attachEvent('onmessage', onMessageReceived, false);
     }
 
     // Handle messages received from the player
     function onMessageReceived(event) {
+    	console.log('message received');
         // Handle messages from the vimeo player only
         if (!(/^https?:\/\/player.vimeo.com/).test(event.origin)) {
             return false;
@@ -25,6 +28,7 @@ $(function() {
         }
 
         var data = JSON.parse(event.data);
+        console.log(data);
 
         switch (data.event) {
             case 'ready':
