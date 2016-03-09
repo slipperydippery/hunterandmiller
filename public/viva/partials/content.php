@@ -152,7 +152,7 @@
 		if($current['type'] != 'blanco_overzicht')
 		{
 ?>
-		<iframe class="vimeo" id="player1" src="https://player.vimeo.com/video/<?= $vimeo_code ?>?api=1&player_id=player1" width="630" height="354" frameborder="0" ></iframe>
+		<iframe id="vimeoiframe" class="vimeo" id="player1" src="https://player.vimeo.com/video/<?= $vimeo_code ?>?api=1&player_id=player1" width="630" height="354" frameborder="0" ></iframe>
 <?php
 		}
 ?>		
