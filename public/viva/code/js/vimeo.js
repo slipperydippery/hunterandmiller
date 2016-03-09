@@ -1,4 +1,5 @@
 $(function() {
+    console.log(window.frames);
 
     console.log('1');
     var player = $('iframe.vimeo');
