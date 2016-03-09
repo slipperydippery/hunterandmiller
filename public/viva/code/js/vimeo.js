@@ -13,27 +13,27 @@ $(function() {
         console.log('window.addEventListener completed');
     }
     else {
-    	console.log('message-else; atach event');
+    	console.log('addEventListener-else; atach event');
         window.attachEvent('onmessage', onMessageReceived, false);
     }
 
     // Handle messages received from the player
     function onMessageReceived(event) {
-    	console.log('message received');
-    	console.log('playerOrigin = ' + playerOrigin);
+    	console.log('OMR- started with event: ');
+        console.log(event);
         // Handle messages from the vimeo player only
         if (!(/^https?:\/\/player.vimeo.com/).test(event.origin)) {
-        	console.log('false origin');
+        	console.log('OMR-false origin!!');
             return false;
         }
 
         if (playerOrigin === '*') {
-        	console.log ('player origin === *, becomes ' + event.origin);
+        	console.log ('OMR-player origin === *, becomes ' + event.origin);
             playerOrigin = event.origin;
         }
 
         var data = JSON.parse(event.data);
-        console.log(data);
+        console.log('OMR-data parse to JSON: ' + data);
 
         switch (data.event) {
             case 'ready':
@@ -114,15 +114,15 @@ $(function() {
 
     function onReady() {
         console.log('ready -onReady() ');
+        post('addEventListener', 'pause');
+        post('addEventListener', 'finish');
+        post('addEventListener', 'playProgress');
         if (current_visited == false)
         {
         	console.log('ready to play - current_visited == false');
             post('play');   
             console.log('should be playing')
         }
-        post('addEventListener', 'pause');
-        post('addEventListener', 'finish');
-        post('addEventListener', 'playProgress');
     }
 
     function onPause() {
