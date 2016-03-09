@@ -7,8 +7,9 @@ $(function() {
 
     // Listen for messages from the player
     if (window.addEventListener) {
-    	console.log('message');
+    	console.log('window.addEventListener triggered');
         window.addEventListener('message', onMessageReceived, false);
+        console.log('window.addEventListener completed');
     }
     else {
     	console.log('message-else');
