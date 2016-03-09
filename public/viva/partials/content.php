@@ -50,7 +50,7 @@
 ?>
 		<div class="vim-noblack" <?=$noblack_style?> >
 			<?php 
-				$thumbnail = unserialize(file_get_contents("http://vimeo.com/api/v2/video/$vimeo_code.php"));
+				$thumbnail = unserialize(file_get_contents("https://vimeo.com/api/v2/video/$vimeo_code.php"));
 			?>
 			<img src="<?= $thumbnail[0]['thumbnail_large'] ?>" />
 		</div>
@@ -81,7 +81,7 @@
 						$child = $$child;
 						$childtitle = isset($child['link_title']) ? $child['link_title'] : $child['title'];
 						$imgid = $child['vimeo'];
-						$thumbnail = unserialize(file_get_contents("http://vimeo.com/api/v2/video/$imgid.php"));
+						$thumbnail = unserialize(file_get_contents("https://vimeo.com/api/v2/video/$imgid.php"));
 ?>
 						<div class="vim-element__wrap">
 							<div class="vim-element">
