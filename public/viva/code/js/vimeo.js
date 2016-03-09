@@ -112,8 +112,10 @@ $(function() {
         console.log(data);
 
         var message = JSON.stringify(data);
-        console.log('post - player 0 has entered the game:');
+        console.log('posting message to player 0:');
         console.log(player[0]);
+        console.log('player[0].contentWindow: ');
+        console.log(player[0].contentWindow);
         player[0].contentWindow.postMessage(data, playerOrigin);
     }
 
