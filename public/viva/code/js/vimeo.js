@@ -1,1 +1,146 @@
-$(function(){function e(e){if(!/^https?:\/\/player.vimeo.com/.test(e.origin))return!1;"*"===n&&(n=e.origin);var s=JSON.parse(e.data);switch(s.event){case"ready":t();break;case"playProgress":c(s.data);break;case"pause":a();break;case"finish":i()}}function s(e,s){var t={method:e};s&&(t.value=s);JSON.stringify(t);o[0].contentWindow.postMessage(t,n)}function t(){l.text("ready"),0==current_visited&&s("play"),s("addEventListener","pause"),s("addEventListener","finish"),s("addEventListener","playProgress")}function a(){$(".play").css("left",0),$(".pause").css("left",-1e4),$(".vim-preplay").css("left",-1e4),$(".vim-overlay").css("left",0),$(".vim-overlay").css("opacity",1),l.text("paused")}function i(){l.text("finished")}function c(e){$(".vim-playpause").css("bottom","0px"),$(".vim-noblack").css("left",1e4),$(".play").css("left",-1e4),$(".pause").css("left",0),e.seconds>e.duration-1&&($(".vim-overlay").css("left",0),$(".vim-overlay").css("opacity",1),$(".vim-playpause").css("left",-1e4),$(".vim-preplay").css("left",-1e4),$(".vim-post-controls--play").css("left",-1e4),s("pause"),s("unload")),l.text(e.seconds+"s played")}var o=$("iframe"),n="*",l=$(".status");window.addEventListener?window.addEventListener("message",e,!1):window.attachEvent("onmessage",e,!1),$("button").on("click",function(){s($(this).text().toLowerCase())}),$(".playclick").on("click",function(){$(".vim-overlay").css("left",-1e4),$(".vim-overlay").css("opacity",0),s("play")}),$(".replayclick").on("click",function(){$(".vim-overlay").css("left",-1e4).delay(2e3),$(".vim-overlay").css("opacity",0),s("unload"),setTimeout("post('play')",200)}),$("img.play").on("click",function(){$(".vim-overlay").css("left",-1e4),$(".vim-overlay").css("opacity",0),s("play")}),$("img.pause").on("click",function(){s("pause")}),$(".vim-post-controls--replay").on("click",function(){$(".vim-overlay").css("left",-1e4),$(".vim-overlay").css("opacity",0),$(".vim-post-controls--play").css("left",0),s("play")}),$(".vim-overlay").on("click",function(){})});
+$(function() {
+    // alert('hey');
+    var player = $('iframe');
+    var playerOrigin = '*';
+    var status = $('.status');
+
+    // Listen for messages from the player
+    if (window.addEventListener) {
+        window.addEventListener('message', onMessageReceived, false);
+    }
+    else {
+        window.attachEvent('onmessage', onMessageReceived, false);
+    }
+
+    // Handle messages received from the player
+    function onMessageReceived(event) {
+        // Handle messages from the vimeo player only
+        if (!(/^https?:\/\/player.vimeo.com/).test(event.origin)) {
+            return false;
+        }
+
+        if (playerOrigin === '*') {
+            playerOrigin = event.origin;
+        }
+
+        var data = JSON.parse(event.data);
+
+        switch (data.event) {
+            case 'ready':
+                onReady();
+                break;
+
+            case 'playProgress':
+                onPlayProgress(data.data);
+                break;
+
+            case 'pause':
+                onPause();
+                break;
+
+            case 'finish':
+                onFinish();
+                break;
+        }
+    }
+
+    // Call the API when a button is pressed
+    $('button').on('click', function() {
+        post($(this).text().toLowerCase());
+    });
+
+    $('.playclick').on('click', function(){
+    	console.log('play');
+        $('.vim-overlay').css("left", -10000);
+        $('.vim-overlay').css("opacity", 0);
+        post('play');
+    });   
+
+    $('.replayclick').on('click', function(){
+    	console.log('replay');
+        $('.vim-overlay').css("left", -10000).delay(2000);
+        $('.vim-overlay').css("opacity", 0);
+        post('unload');
+        setTimeout("post('play')", 200);
+        
+    });        
+
+    $('img.play').on('click', function(){
+    	console.log('play');
+        $('.vim-overlay').css("left", -10000);
+        $('.vim-overlay').css("opacity", 0);
+        post('play');
+    });
+
+    $('img.pause').on('click', function(){
+        post('pause');
+    });
+
+    $('.vim-post-controls--replay').on('click', function(){
+        $('.vim-overlay').css("left", -10000);
+        $('.vim-overlay').css("opacity", 0);
+        $('.vim-post-controls--play').css("left", 0);
+        post('play');
+    });
+
+    $('.vim-overlay').on('click', function () {
+        // post('play');
+    });
+
+    // Helper function for sending a message to the player
+    function post(action, value) {
+        var data = {
+            method: action
+        };
+
+        if (value) {
+            data.value = value;
+        }
+
+        var message = JSON.stringify(data);
+        player[0].contentWindow.postMessage(data, playerOrigin);
+    }
+
+    function onReady() {
+        console.log('ready');
+        status.text('ready');
+        if (current_visited == false)
+        {
+            post('play');   
+        }
+        post('addEventListener', 'pause');
+        post('addEventListener', 'finish');
+        post('addEventListener', 'playProgress');
+    }
+
+    function onPause() {
+        $('.play').css("left", 0);
+        $('.pause').css("left", -10000);
+        $('.vim-preplay').css("left", -10000);
+        $('.vim-overlay').css("left", 0);
+        $('.vim-overlay').css("opacity", 1);
+        status.text('paused');
+    }
+
+    function onFinish() {
+        status.text('finished');
+    }
+
+    function onPlayProgress(data) {
+        $('.vim-playpause').css("bottom", "0px");
+        $('.vim-noblack').css("left", 10000);
+        $('.play').css("left", -10000);
+        $('.pause').css("left", 0);
+        if(data.seconds > (data.duration - 1)) {
+        //if(data.seconds > 3) {
+            $('.vim-overlay').css("left", 0);
+            $('.vim-overlay').css("opacity", 1);
+            $('.vim-playpause').css("left", -10000);
+            $('.vim-preplay').css("left", -10000);
+            $('.vim-post-controls--play').css("left", -10000);
+            post('pause');
+            post('unload');
+        }
+        status.text(data.seconds + 's played');
+    }
+});
