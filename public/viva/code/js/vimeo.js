@@ -107,11 +107,12 @@ $(function() {
     }
 
     function onReady() {
-        console.log('ready');
-        status.text('ready');
+        console.log('ready -onReady() ');
         if (current_visited == false)
         {
+        	console.log('ready to play - current_visited == false');
             post('play');   
+            console.log('should be playing')
         }
         post('addEventListener', 'pause');
         post('addEventListener', 'finish');
