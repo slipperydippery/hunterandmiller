@@ -1,20 +1,20 @@
 $(function() {
-	console.log('1');
+
+    console.log('1');
     var player = $('iframe.vimeo');
     console.log(player);
     var playerOrigin = '*';
     var status = $('.status');
-    var iframe = document.getElementById("vimeoiframe");
 
     // Listen for messages from the player
-    if (iframe.addEventListener) {
+    if (window.addEventListener) {
     	console.log('window.addEventListener triggered');
-        iframe.addEventListener('message', onMessageReceived, false);
+        window.addEventListener('message', onMessageReceived, false);
         console.log('window.addEventListener completed');
     }
     else {
-    	console.log('message-else');
-        iframe.attachEvent('onmessage', onMessageReceived, false);
+    	console.log('message-else; atach event');
+        window.attachEvent('onmessage', onMessageReceived, false);
     }
 
     // Handle messages received from the player
