@@ -1,8 +1,11 @@
 <?php
 	include './partials/contact_form_header.php';
 	include './partials/header.php';
-	//$checkmark = "<img src='img/checkmark.png' class='checkmark' />";
-	$checkmark = ''; 
+/*
+	$checkmark = "<img src='img/checkmark.png' class='checkmark' />";
+
+*/	$checkmark = ''; 
+
 
 	require_once './code/pages.php';
 	$current = $$current;
@@ -157,7 +160,8 @@
 	</div>
     <div class="vim-shortcuts">
 <?php 
-			$backPage = $parent['type'] == 'woning_overzicht' ? $$parent['parent'] : $parent;
+			$gParent = $parent['parent'];
+			$backPage = $parent['type'] == 'woning_overzicht' ? $$gParent : $parent;
 ?>
 			<a href="<?= $backPage['adress'] ?>" class="vim-shortcut vim-shortcut--back" >
 				<h3><?= ' '//$type[$backPage['type']]['back_to_here']?></h3>							
