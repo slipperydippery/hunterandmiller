@@ -1,6 +1,7 @@
 $(function() {
 	console.log('1');
-    var player = $('iframe');
+    var player = $('iframe.vimeo');
+    console.log(player);
     var playerOrigin = '*';
     var status = $('.status');
 
