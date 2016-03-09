@@ -32,12 +32,6 @@
 <script>
     var current_visited = <?php echo json_encode($current_visited); ?>; 
 </script>
-<style>
-	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-	/* IE10+ CSS styles go here */
-		.vim-noblack {display: none;border: 10px solid red;}
-	}
-</style>
 
 <div class="vimapp-wrap">
 	<div class="vim-breadcrumb">
