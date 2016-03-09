@@ -1,5 +1,5 @@
 $(function() {
-    // alert('hey');
+	console.log('1');
     var player = $('iframe');
     var playerOrigin = '*';
     var status = $('.status');
