@@ -19,6 +19,7 @@ $(function() {
     // Handle messages received from the player
     function onMessageReceived(event) {
     	console.log('message received');
+    	console.log('playerOrigin = ' + playerOrigin);
         // Handle messages from the vimeo player only
         if (!(/^https?:\/\/player.vimeo.com/).test(event.origin)) {
         	console.log('false origin');
@@ -26,6 +27,7 @@ $(function() {
         }
 
         if (playerOrigin === '*') {
+        	console.log ('player origin === *, becomes ' + event.origin);
             playerOrigin = event.origin;
         }
 
