@@ -1,9 +1,9 @@
-			
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- <html xmlns="http://www.w3.org/1999/xhtml" xmlns:addthis="http://www.addthis.com/help/api-spec" lang="nl-NL"> -->
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="nl-NL">
 <head itemscope itemtype="http://schema.org/WebSite">
-	<!-- (C) 2015 Snakeware New Media B.V. - www.snakeware.nl - info@snakeware.nl -->
-	<title itemprop="name">ViVa! Zorggroep // Over ViVa! &gt; Locaties</title>
+	<!-- (C) 2016 Snakeware New Media B.V. - www.snakeware.nl - info@snakeware.nl -->
+	<title itemprop="name">ViVa! Zorggroep // Gemeenten</title>
 	<base href="https://www.vivazorggroep.nl/"/>
 	<meta itemprop="url" content="https://www.vivazorggroep.nl/"/>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
@@ -11,50 +11,44 @@
 	<meta http-equiv="content-script-type" content="text/javascript"/>
 	<meta http-equiv="content-language" content="nl-NL"/>
 	<meta name="generator" content="Snakeware New Media B.V., e-mail: info@snakeware.nl, internet: http://www.snakeware.nl/"/>
-	<meta name="copyright" content="Copyright (C) 2015 ViVa! Zorggroep"/>
-	<meta name="description" content=""/>
-	<meta name="robots" content="index,follow"/>
+	<meta name="copyright" content="Copyright (C) 2016 ViVa! Zorggroep"/>
 	<meta name="distribution" content="global"/>
 	<meta name="resource-type" content="document"/>
 	<meta name="verify-v1" content=""/>
+	<meta name="robots" content="index,follow"/>
 	<link rel="home" href="https://www.vivazorggroep.nl/" title="Homepage"/>
 	<link rel="contents" href="https://www.vivazorggroep.nl/sitemap.xml" title="Sitemap"/>
 	<link rel="shortcut icon" href="https://www.vivazorggroep.nl/favicon.ico" type="image/x-icon"/>
-	<link rel="stylesheet" href="videochoice.css" type="text/css"/>
-	<link rel="stylesheet" href="https://www.vivazorggroep.nl/css/20694426/e2967677dc54ad387d485fbad1231bce.css" type="text/css"/>
-
-	<script type="text/javascript" src="app.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-	<script type="text/javascript" src="vimeo.js"></script>
-
-	<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
-	<script type="text/javascript" src="https://www.vivazorggroep.nl/js/23988309/728ff236633c051f62c96fd1a3144c13.0413.js"></script>
+	<script type="text/javascript">var sw={}</script>
+	<link rel="stylesheet" href="css/32538459/e2967677dc54ad387d485fbad1231bce.css" type="text/css"/>
+	<script type="text/javascript">var language=0,browser=8,version=48,steID=1,catID=990,itmID=3692,imgBack=true,rewriting=true,horizontal=true;</script>
+	<script type="text/javascript" src="https://use.typekit.net/gaa3dpy.js"></script>
+	<script type="text/javascript" src="js/36680345/7bceec36e401e4a9033d4d97c051516d.0413.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){};
 var imgImageLoader = new Responsive.ImageLoader("img[data-responsive]", Responsive.ImageLoader.setImgSource);
 var bgImageLoader = new Responsive.ImageLoader("[data-responsiveBg]", Responsive.ImageLoader.setBgSource);
 sw.minSearchLen=4;
 </script>
 <script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(["_setAccount", "UA-48315816-1"]);
-_gaq.push(["_setAllowAnchor",true]);
-_gaq.push(["_trackPageview"]);
-(function(){
-var ga=document.createElement("script");ga.type="text/javascript";ga.async=true;
-ga.src=("https:" == document.location.protocol ? "https://" : "http://") + "stats.g.doubleclick.net/dc.js";
-var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga,s);
-})();
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,"script","//www.google-analytics.com/analytics.js","ga");
+ga("create","UA-48315816-1","auto");
+ga("require","displayfeatures");
+ga("require","linkid", "linkid.js");
+ga("send","pageview");
 </script>
 </head>
 <body onload="bodyLoad(this,false)" style="text-align:left">
-	<img id="imgBack" src="https://www.vivazorggroep.nl/img/default/lightbox.png" style="display:none;" alt=""/>
+	<img id="imgBack" src="img/default/lightbox.png" style="display:none;" alt=""/>
 	<div class="main">
 <div class="wrapper" id="header">
 	<div class="layout">
 		<div class="header">
-			<div class="logo">
+			<div class="logo jarig">
 				<a href="">
-					<img src="https://www.vivazorggroep.nl/img/logoVivaZorggroepNew.gif" alt="Viva! Zorggroep Logo" />
+					<img src="img/logo10JaarVivaZorggroep.png" alt="Viva! Zorggroep Logo" />
 				</a>
 			</div>
 			<div class="topLinks">
@@ -63,10 +57,10 @@ var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga,s)
 				</div>
 				<div class="links">
 					<a href="http://www.jgzkennemerland.nl" class="first " target="_blank" title="http://www.jgzkennemerland.nl">
-						<img src="https://www.vivazorggroep.nl/img/default/pixTrans.gif" alt="" align="right" class="link" />Jeugdgezondheidszorg</a>
+						<img align="right" class="link" src="img/default/pixTrans.gif" />Jeugdgezondheidszorg</a>
 					<a href="maatjez-centrum-voor-mantelzorg">Mantelzorg</a>
 					<a href="https://www.medipoint.nl/vivazorggroep/" target="_blank" title="https://www.medipoint.nl/vivazorggroep/">
-						<img src="https://www.vivazorggroep.nl/img/default/pixTrans.gif" alt="" align="right" class="link" />Thuiszorgwinkel</a>
+						<img align="right" class="link" src="img/default/pixTrans.gif" />Thuiszorgwinkel</a>
 					<a href="over-viva/contact">Contact</a>
 					<a href="over-viva/locaties" class="last ">Locaties</a>
 				</div>
@@ -78,38 +72,41 @@ var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga,s)
 					<input type="hidden" name="catID" value="59" />
 					<input type="hidden" name="ShowResult" value="1" />
 					<button type="submit">
-						<img src="https://www.vivazorggroep.nl/img/btnSearch.gif" alt="zoeken" />
+						<img src="../img/btnSearch.gif" alt="zoeken" />
 					</button>
 				</form>
 			</div>
 			<ul id="mainMenu">
 				<li>
 					<a href="wonen" class="first ">
-						<img src="https://www.vivazorggroep.nl/img/default/pixTrans.gif" alt="" align="right" />Wonen</a>
+						<img align="right" src="img/default/pixTrans.gif" />Wonen</a>
 				</li>
 				<li>
 					<a href="welzijn">
-						<img src="https://www.vivazorggroep.nl/img/default/pixTrans.gif" alt="" align="right" />Welzijn</a>
+						<img align="right" src="img/default/pixTrans.gif" />Welzijn</a>
 				</li>
 				<li>
 					<a href="zorg">
-						<img src="https://www.vivazorggroep.nl/img/default/pixTrans.gif" alt="" align="right" />Zorg</a>
+						<img align="right" src="img/default/pixTrans.gif" />Zorg</a>
 				</li>
 				<li>
 					<a href="ledenservice">
-						<img src="https://www.vivazorggroep.nl/img/default/pixTrans.gif" alt="" align="right" />ViVa! Ledenservice</a>
+						<img align="right" src="img/default/pixTrans.gif" />ViVa! Ledenservice</a>
 				</li>
 				<li>
 					<a href="werken-en-leren">
-						<img src="https://www.vivazorggroep.nl/img/default/pixTrans.gif" alt="" align="right" />Werken &amp; leren</a>
+						<img align="right" src="img/default/pixTrans.gif" />Werken &amp; leren</a>
 				</li>
 				<li>
-					<a href="over-viva" class="parent last ">
-						<img src="https://www.vivazorggroep.nl/img/default/pixTrans.gif" alt="" align="right" />Over ViVa!</a>
+					<a href="over-viva" class="last ">
+						<img align="right" src="img/default/pixTrans.gif" />Over ViVa!</a>
 				</li>
 			</ul>
 		</div>
 	</div>
+</div>
+<div class="wrapper" id="slider">
+	<div class="layout"></div>
 </div>
 <div class="wrapper" id="vervolg">
 	<div class="layout">
@@ -120,19 +117,12 @@ var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga,s)
 						<span itemprop="title">Home</span>
 					</a>
 				</span>
-				<img src="https://www.vivazorggroep.nl/img/default/pixTrans.gif" alt="" />
-				<span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
-					<a title="Over ViVa!" href="over-viva" itemprop="url">
-						<span itemprop="title">Over ViVa!</span>
-					</a>
-				</span>
-				<img src="https://www.vivazorggroep.nl/img/default/pixTrans.gif" alt="" />
-				<a title="Locaties" class="current" itemprop="url">
-					<span itemprop="title">Locaties</span>
+				<img src="img/default/pixTrans.gif" />
+				<a title="Gemeenten" class="current" itemprop="url">
+					<span itemprop="title">Gemeenten</span>
 				</a>
 			</div>
-
-			<iframe src="http://www.hunterandmiller.com/viva/" width="960px" height="1140px" frameborder="0" scrolling="no" seamless="seamless"></iframe>
+			<iframe frameborder="0" scrolling="no" seamless="seamless" src="http://hunterandmiller.app/viva" height="1140" width="960"></iframe>
 		</div>
 	</div>
 </div>
@@ -141,9 +131,9 @@ var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga,s)
 		<div class="footer">
 			<div class="top">
 				<div class="copyright">
-					<a href="links-in-kolommen" class="first last ">© ViVa! Zorggroep 2015</a>
+					<a href="links-in-kolommen" class="first last ">© ViVa! Zorggroep 2016</a>
 				</div>
-				<div class="twitter">vivazorggroep: @ViVa_Leden gefeliciteerd !</div>
+				<div class="twitter">vivazorggroep: RT @lderidder: Op mijn vrijhe dag toch even naar @vivazorggroep nog wat werk voor #NLDOET zodat we vrijdag kunnen happen en stappen. Aanmel…</div>
 			</div>
 			<div class="middle">
 				<div class="footerBlock">
@@ -185,7 +175,7 @@ var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga,s)
 				<div class="keurmerkLinks">
 					<div class="keurmerken">
 						<a href="over-viva/kwaliteit/kwaliteitskeurmerk.htm">
-							<img height="33" alt="HKZ" title="HKZ" src="https://www.vivazorggroep.nl/files/7/0/2/1/HKZ%20logo.jpg?height=33" />
+							<img height="33" alt="HKZ" title="HKZ" src="files/7/0/2/1/HKZ%20logo.jpg?height=33" />
 						</a>
 					</div>
 					<div class="links">
@@ -207,8 +197,8 @@ var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga,s)
 </body>
 </html>
 <!--
-	Total Time: 0:00:00.074
-	Total database access: 0:00:00.009
-	Main Xsl transformation: 0:00:00.012
-	code: 0:00:00.051
+	Total Time: 0:00:00.053
+	Total database access: 0:00:00.010
+	Main Xsl transformation: 0:00:00.004
+	code: 0:00:00.038
 -->
