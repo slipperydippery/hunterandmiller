@@ -28,7 +28,7 @@
 </head>
 <body>
 
-			<iframe frameborder="0" scrolling="no" seamless="seamless" src="https://huntmill.com/viva/" height="1140" width="960"></iframe>
+			<iframe frameborder="0" scrolling="no" seamless="seamless" src="https://huntmill.com/viva/gemeenten.php" height="1140" width="960"></iframe>
 
 </body>
 </html>
