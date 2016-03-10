@@ -22,8 +22,8 @@
 	<script type="text/javascript">var sw={}</script>
 	<link rel="stylesheet" href="css/32538459/e2967677dc54ad387d485fbad1231bce.css" type="text/css"/>
 	<script type="text/javascript">var language=0,browser=8,version=48,steID=1,catID=990,itmID=3692,imgBack=true,rewriting=true,horizontal=true;</script>
-	<script type="text/javascript" src="https://use.typekit.net/gaa3dpy.js"></script>
-	<script type="text/javascript" src="js/36680345/7bceec36e401e4a9033d4d97c051516d.0413.js"></script> -->
+	<script type="text/javascript" src="https://use.typekit.net/gaa3dpy.js"></script> -->
+	<script type="text/javascript" src="js/36680345/7bceec36e401e4a9033d4d97c051516d.0413.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){};
 var imgImageLoader = new Responsive.ImageLoader("img[data-responsive]", Responsive.ImageLoader.setImgSource);
 var bgImageLoader = new Responsive.ImageLoader("[data-responsiveBg]", Responsive.ImageLoader.setBgSource);
