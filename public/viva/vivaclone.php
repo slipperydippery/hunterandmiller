@@ -6,7 +6,7 @@
 	<title itemprop="name">ViVa! Zorggroep // Gemeenten</title>
 	<base href="https://www.vivazorggroep.nl/"/>
 
-<!-- 	<meta itemprop="url" content="https://www.vivazorggroep.nl/"/>
+	<meta itemprop="url" content="https://www.vivazorggroep.nl/"/>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<meta http-equiv="content-style-type" content="text/css"/>
 	<meta http-equiv="content-script-type" content="text/javascript"/>
@@ -14,7 +14,7 @@
 	<meta name="generator" content="Snakeware New Media B.V., e-mail: info@snakeware.nl, internet: http://www.snakeware.nl/"/>
 	<meta name="copyright" content="Copyright (C) 2016 ViVa! Zorggroep"/>
 	<meta name="distribution" content="global"/>
-	<meta name="resource-type" content="document"/> -->
+	<meta name="resource-type" content="document"/>
 	
 	<meta name="verify-v1" content=""/>
 	<meta name="robots" content="index,follow"/>
