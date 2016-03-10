@@ -5,7 +5,6 @@
 	<!-- (C) 2016 Snakeware New Media B.V. - www.snakeware.nl - info@snakeware.nl -->
 	<title itemprop="name">ViVa! Zorggroep // Gemeenten</title>
 	<base href="https://www.vivazorggroep.nl/"/>
-
 	<meta itemprop="url" content="https://www.vivazorggroep.nl/"/>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<meta http-equiv="content-style-type" content="text/css"/>
@@ -15,7 +14,6 @@
 	<meta name="copyright" content="Copyright (C) 2016 ViVa! Zorggroep"/>
 	<meta name="distribution" content="global"/>
 	<meta name="resource-type" content="document"/>
-	
 	<meta name="verify-v1" content=""/>
 	<meta name="robots" content="index,follow"/>
 	<link rel="home" href="https://www.vivazorggroep.nl/" title="Homepage"/>
@@ -24,7 +22,6 @@
 	<script type="text/javascript">var sw={}</script>
 	<link rel="stylesheet" href="css/32538459/e2967677dc54ad387d485fbad1231bce.css" type="text/css"/>
 	<script type="text/javascript">var language=0,browser=8,version=48,steID=1,catID=990,itmID=3692,imgBack=true,rewriting=true,horizontal=true;</script>
-
 	<script type="text/javascript" src="https://use.typekit.net/gaa3dpy.js"></script>
 	<script type="text/javascript" src="js/36680345/7bceec36e401e4a9033d4d97c051516d.0413.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){};
