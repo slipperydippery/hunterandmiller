@@ -4,21 +4,21 @@
 <head itemscope itemtype="http://schema.org/WebSite">
 	<!-- (C) 2015 Snakeware New Media B.V. - www.snakeware.nl - info@snakeware.nl -->
 	<title itemprop="name">ViVa! Zorggroep // Over ViVa! &gt; Locaties</title>
-	<!-- <base href="https://www.vivazorggroep.nl/"/> -->
-	<!-- <meta itemprop="url" content="https://www.vivazorggroep.nl/"/> -->
-	<!-- <meta http-equiv="content-type" content="text/html; charset=utf-8"/> -->
-	<!-- <meta http-equiv="content-style-type" content="text/css"/> -->
-	<!-- <meta http-equiv="content-script-type" content="text/javascript"/> -->
-	<!-- <meta http-equiv="content-language" content="nl-NL"/> -->
-	<!-- <meta name="generator" content="Snakeware New Media B.V., e-mail: info@snakeware.nl, internet: http://www.snakeware.nl/"/> -->
-	<!-- <meta name="copyright" content="Copyright (C) 2015 ViVa! Zorggroep"/> -->
-	<!-- <meta name="description" content=""/> -->
-	<!-- <meta name="robots" content="index,follow"/> -->
-	<!-- <meta name="distribution" content="global"/> -->
-	<!-- <meta name="resource-type" content="document"/> -->
-	<!-- <meta name="verify-v1" content=""/> -->
-	<!-- <link rel="home" href="https://www.vivazorggroep.nl/" title="Homepage"/> -->
-	<!-- <link rel="contents" href="https://www.vivazorggroep.nl/sitemap.xml" title="Sitemap"/> -->
+	<base href="https://www.vivazorggroep.nl/"/>
+	<meta itemprop="url" content="https://www.vivazorggroep.nl/"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="content-style-type" content="text/css"/>
+	<meta http-equiv="content-script-type" content="text/javascript"/>
+	<meta http-equiv="content-language" content="nl-NL"/>
+	<meta name="generator" content="Snakeware New Media B.V., e-mail: info@snakeware.nl, internet: http://www.snakeware.nl/"/>
+	<meta name="copyright" content="Copyright (C) 2015 ViVa! Zorggroep"/>
+	<meta name="description" content=""/>
+	<meta name="robots" content="index,follow"/>
+	<meta name="distribution" content="global"/>
+	<meta name="resource-type" content="document"/>
+	<meta name="verify-v1" content=""/>
+	<link rel="home" href="https://www.vivazorggroep.nl/" title="Homepage"/>
+	<link rel="contents" href="https://www.vivazorggroep.nl/sitemap.xml" title="Sitemap"/>
 	<link rel="shortcut icon" href="https://www.vivazorggroep.nl/favicon.ico" type="image/x-icon"/>
 	<link rel="stylesheet" href="videochoice.css" type="text/css"/>
 	<link rel="stylesheet" href="https://www.vivazorggroep.nl/css/20694426/e2967677dc54ad387d485fbad1231bce.css" type="text/css"/>
