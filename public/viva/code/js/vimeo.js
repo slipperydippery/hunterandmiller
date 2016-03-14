@@ -8,19 +8,13 @@ $(function() {
     // Listen for messages from the player
     console.log('hello, this is your msie version if applicable: ' + detectIE());
     var vimeoapp = document.getElementById("vimeoapp");
-    console.log('classname works? ' + vimeoapp.className);
     if (window.addEventListener) {
-        vimeoapp.addEventListener('message', onMessageReceived, false);
-        vimeoapp.addEventListener('click', testClick, false);
+        window.addEventListener('message', onMessageReceived, false);
         console.log('window.addEventListener onMessageReceived(event) ');
     }
     else {
-    	console.log('addEventListener-else; atach event');
+    	console.log('addEventListener-else; atach event');                   //IE < 9
         window.attachEvent('onmessage', onMessageReceived, false);
-    }
-
-    function testClick(){
-        console.log('clicked');
     }
 
     // Handle messages received from the player
