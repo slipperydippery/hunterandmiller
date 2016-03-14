@@ -136,7 +136,7 @@
 		if($current['type'] != 'blanco_overzicht')
 		{
 ?>
-			<a href="#" class="vim-post-controls vim-post-controls--replay">
+			<a href="#" class="vim-post-controls vim-post-controls--replay" id="replay">
 				<img src="img/replay.png" />
 			</a>
 
@@ -224,6 +224,20 @@
     </div>
     <!-- <a href="unsetcookies.php" style="display:inline-block; margin: 2rem 0 0 0 ;">reset demo</a></p> -->
 </div>
+
+<script>
+	window.onload = function () {
+		console.log('-----00000----');
+
+		console.log(document.getElementById('replay'));
+
+
+		window.addEventListener('message', function(e){
+			console.log('--- message received---  ');
+			console.log(e);
+		});
+	}
+</script>
 
 <?php
 	include './partials/footer.php';

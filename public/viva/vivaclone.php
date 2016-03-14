@@ -122,7 +122,7 @@ ga("send","pageview");
 					<span itemprop="title">Gemeenten</span>
 				</a>
 			</div>
-			<iframe id="iframe" frameborder="0" scrolling="no" seamless="seamless" src="http://huntmill.com/viva" height="1140" width="960"></iframe>
+			<iframe id="iframe" frameborder="0" scrolling="no" seamless="seamless" src="http://hunterandmiller.app/viva/" height="1140" width="960"></iframe>
 		</div>
 	</div>
 </div>
@@ -194,11 +194,9 @@ ga("send","pageview");
 		</div>
 	</div>
 </div>	</div>
-<script>
-var source = "javascript:'<script>window.onload=function(){document.write(\\'<script>document.domain=\\\"" + document.domain + "\\\";<\\\\/script>\\');document.close();return \\\"+url+\\\";};<\/script>'";
-$('#iframe').attr("src", source);
-</script>
+
 </body>
+
 </html>
 <!--
 	Total Time: 0:00:00.053

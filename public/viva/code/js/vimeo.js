@@ -23,10 +23,10 @@ $(function() {
     	console.log('OMR- started with event: ');
         console.log(event);
         // Handle messages from the vimeo player only
-        if (!(/^https?:\/\/player.vimeo.com/).test(event.origin)) {
-        	console.log('OMR-false origin!!');
-            return false;
-        }
+        // if (!(/^https?:\/\/player.vimeo.com/).test(event.origin)) {
+        // 	console.log('OMR-false origin!!');
+        //     return false;
+        // }
 
         if (playerOrigin === '*') {
         	console.log ('OMR-player origin === *, becomes ' + event.origin);
@@ -69,6 +69,7 @@ $(function() {
         console.log(data);
 
         var message = JSON.stringify(data);
+        console.log(data);
         console.log('3. post() postMessage to player[0].contentWindow');
         console.log('4. post() player[0]:')
         console.log(player[0]);
