@@ -28,12 +28,13 @@
 	{
 		$recentlySentMail = $_COOKIE['mailSent'];
 	}
+
 ?>
 <script>
     var current_visited = <?php echo json_encode($current_visited); ?>; 
 </script>
 
-<div class="vimapp-wrap">
+<div class="vimapp-wrap" id="vimeoapp">
 	<div class="vim-breadcrumb">
 		<?= $breadcrumb ?>
 	</div>

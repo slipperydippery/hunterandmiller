@@ -4,10 +4,14 @@ $(function() {
     var playerOrigin = '*';
     var status = $('.status');
 
+
     // Listen for messages from the player
+    console.log('hello, this is your msie version if applicable: ' + detectIE());
+    var vimeoapp = document.getElementById("vimeoapp");
+    console.log('classname works? ' + vimeoapp.className);
     if (window.addEventListener) {
-        window.addEventListener('message', onMessageReceived, false);
-        console.log('window.addEventListener -onMessageReceived- ');
+        vimeoapp.addEventListener('message', onMessageReceived, false);
+        console.log('window.addEventListener onMessageReceived(event) ');
     }
     else {
     	console.log('addEventListener-else; atach event');
@@ -16,7 +20,7 @@ $(function() {
 
     // Handle messages received from the player
     function onMessageReceived(event) {
-        console.log('ORM onMessageReceived');
+        console.log('OMR onMessageReceived');
     	console.log('OMR- started with event: ');
         console.log(event);
         // Handle messages from the vimeo player only
@@ -160,4 +164,34 @@ $(function() {
     $('.vim-overlay').on('click', function () {
         // post('play');
     });
+
+    /**
+     * detect IE
+     * returns version of IE or false, if browser is not Internet Explorer
+     */
+    function detectIE() {
+        var ua = window.navigator.userAgent;
+
+        var msie = ua.indexOf('MSIE ');
+        if (msie > 0) {
+            // IE 10 or older => return version number
+            return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+        }
+
+        var trident = ua.indexOf('Trident/');
+        if (trident > 0) {
+            // IE 11 => return version number
+            var rv = ua.indexOf('rv:');
+            return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+        }
+
+        var edge = ua.indexOf('Edge/');
+        if (edge > 0) {
+           // Edge (IE 12+) => return version number
+           return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+        }
+
+        // other browser
+        return false;
+    }
 });
