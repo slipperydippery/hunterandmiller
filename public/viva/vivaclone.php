@@ -21,7 +21,7 @@
 	<link rel="shortcut icon" href="https://www.vivazorggroep.nl/favicon.ico" type="image/x-icon"/>
 	<script type="text/javascript">var sw={}</script>
 	<link rel="stylesheet" href="css/32538459/e2967677dc54ad387d485fbad1231bce.css" type="text/css"/>
-	<script type="text/javascript">var language=0,browser=8,version=48,steID=1,catID=990,itmID=3692,imgBack=true,rewriting=true,horizontal=true;</script>
+	<script type="text/javascript">var language=0,browser=1,version=11,steID=1,catID=990,itmID=3692,imgBack=true,rewriting=true,horizontal=true;</script>
 	<script type="text/javascript" src="https://use.typekit.net/gaa3dpy.js"></script>
 	<script type="text/javascript" src="js/36680345/7bceec36e401e4a9033d4d97c051516d.0413.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){};
@@ -122,7 +122,7 @@ ga("send","pageview");
 					<span itemprop="title">Gemeenten</span>
 				</a>
 			</div>
-			<iframe frameborder="0" scrolling="no" seamless="seamless" src="https://huntmill.com/viva/" height="1140" width="960"></iframe>
+			<iframe id="iframe" frameborder="0" scrolling="no" seamless="seamless" src="http://huntmill.com/viva" height="1140" width="960"></iframe>
 		</div>
 	</div>
 </div>
@@ -194,6 +194,10 @@ ga("send","pageview");
 		</div>
 	</div>
 </div>	</div>
+<script>
+var source = "javascript:'<script>window.onload=function(){document.write(\\'<script>document.domain=\\\"" + document.domain + "\\\";<\\\\/script>\\');document.close();return \\\"+url+\\\";};<\/script>'";
+$('#iframe').attr("src", source);
+</script>
 </body>
 </html>
 <!--
