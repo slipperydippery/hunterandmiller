@@ -1,3 +1,7 @@
+body, .main {
+	background: #e5e5e5;
+}
+
 .vim-element__wrap,
 .vim-shortcuts,
 a.choice {
