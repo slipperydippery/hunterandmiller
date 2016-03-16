@@ -2,27 +2,25 @@ $(function() {
     console.log('---start---')
     var player = $('iframe.vimeo');
 
-    document.getElementById("vimeoiframe").onload = function() {
-      console.log("#vimeoiframe is loaded");
-        console.log(player);
-        console.log(player[0].contentWindow);
-        console.log(player[0].contentWindow.domain);
-        var playerOrigin = '*';
-        var status = $('.status');
+    console.log("#vimeoiframe is loaded");
+    console.log(player);
+    console.log(player[0].contentWindow);
+    var playerOrigin = '*';
+    var status = $('.status');
 
 
-        // Listen for messages from the player
-        console.log('hello, this is your msie version if applicable: ' + detectIE());
-        var vimeoapp = document.getElementById("vimeoapp");
-        if (window.addEventListener) {
-            window.addEventListener('message', onMessageReceived, false);
-            console.log('window.addEventListener onMessageReceived(event) ');
-        }
-        else {
-        	console.log('addEventListener-else; atach event');                   //IE < 9
-            window.attachEvent('onmessage', onMessageReceived, false);
-        }
-    };
+    // Listen for messages from the player
+    console.log('hello, this is your msie version if applicable: ' + detectIE());
+    var vimeoapp = document.getElementById("vimeoapp");
+    if (window.addEventListener) {
+        window.addEventListener('message', onMessageReceived, false);
+        console.log('window.addEventListener onMessageReceived(event) ');
+    }
+    else {
+    	console.log('addEventListener-else; atach event');                   //IE < 9
+        window.attachEvent('onmessage', onMessageReceived, false);
+    }
+
 
 
     // Handle messages received from the player
