@@ -24,6 +24,9 @@
 	<script type="text/javascript">var language=0,browser=1,version=11,steID=1,catID=990,itmID=3692,imgBack=true,rewriting=true,horizontal=true;</script>
 	<script type="text/javascript" src="https://use.typekit.net/gaa3dpy.js"></script>
 	<script type="text/javascript" src="js/36680345/7bceec36e401e4a9033d4d97c051516d.0413.js"></script>
+    <script type="text/javascript" src="http://hunterandmiller.app/viva/code/js/jquery-2.2.1.js"></script>
+	<script type="text/javascript" src="http://hunterandmiller.app/viva/code/js/app.js"></script>
+	<script type="text/javascript" src="http://hunterandmiller.app/viva/code/js/vivaclone.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){};
 var imgImageLoader = new Responsive.ImageLoader("img[data-responsive]", Responsive.ImageLoader.setImgSource);
 var bgImageLoader = new Responsive.ImageLoader("[data-responsiveBg]", Responsive.ImageLoader.setBgSource);
@@ -122,7 +125,7 @@ ga("send","pageview");
 					<span itemprop="title">Gemeenten</span>
 				</a>
 			</div>
-			<iframe id="iframe" frameborder="0" scrolling="no" seamless="seamless" src="https://huntmill.com/viva/" height="1140" width="960"></iframe>
+			<iframe id="iframe" frameborder="0" scrolling="no" seamless="seamless" src="http://hunterandmiller.app/viva/" height="1140" width="960"></iframe>
 		</div>
 	</div>
 </div>
