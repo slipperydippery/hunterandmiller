@@ -2,8 +2,9 @@ $(function() {
     console.log('---start---')
     var player = $('iframe.vimeo');
 
-    console.log("#vimeoiframe is loaded");
+    console.log("iframe:");
     console.log(player);
+    console.log("iframe contentWindow:");
     console.log(player[0].contentWindow);
     var playerOrigin = '*';
     var status = $('.status');
