@@ -51,7 +51,7 @@
 ?>
 		<div class="vim-noblack" <?=$noblack_style?> >
 			<?php 
-				$thumbnail = unserialize(file_get_contents("http://vimeo.com/api/v2/video/$vimeo_code.php"));
+				$thumbnail = unserialize(file_get_contents("https://vimeo.com/api/v2/video/$vimeo_code.php"));
 			?>
 			<img src="<?= $thumbnail[0]['thumbnail_large'] ?>" />
 		</div>

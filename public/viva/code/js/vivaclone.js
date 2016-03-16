@@ -5,7 +5,14 @@ $(function() {
     console.log(module);
     console.log(module[0]);
     console.log(module[0].contentWindow);
-    module[0].contentWindow.postMessage('hello', 'http://hunterandmiller.app/viva/');
+    var testbutton = document.getElementById("testbutton");
+
+
+    document.getElementById("testbutton").addEventListener('click', function() {
+    	console.log('==send==');
+		module[0].contentWindow.postMessage('hello', 'http://hunterandmiller.app/viva/');    	
+    	console.log('==sent==');
+    });
 
     document.getElementById("iframe").onload = function() {
     	console.log('==send==');
