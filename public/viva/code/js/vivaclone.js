@@ -10,13 +10,13 @@ $(function() {
 
     document.getElementById("testbutton").addEventListener('click', function() {
     	console.log('==send==');
-		module[0].contentWindow.postMessage('hello', 'http://hunterandmiller.app/viva/');    	
+		module[0].contentWindow.postMessage('hello', 'https://huntmill.com/viva/');    	
     	console.log('==sent==');
     });
 
     document.getElementById("iframe").onload = function() {
     	console.log('==send==');
-		module[0].contentWindow.postMessage('hello', 'http://hunterandmiller.app/viva/');    	
+		module[0].contentWindow.postMessage('hello', 'https://huntmill.com/viva/');    	
     	console.log('==sent==');
     };
     
