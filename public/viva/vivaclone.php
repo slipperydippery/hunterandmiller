@@ -26,7 +26,7 @@
 	<script type="text/javascript" src="js/36680345/7bceec36e401e4a9033d4d97c051516d.0413.js"></script>
 	<script type="text/javascript" src="https://huntmill.com/viva/code/js/jquery-2.2.1.js"></script>
 	<script type="text/javascript" src="https://huntmill.com/viva/code/js/app.js"></script>
-	<script type="text/javascript" src="https://huntmill.com/viva/code/js/vivaclone.js"></script>
+	<!-- <script type="text/javascript" src="https://huntmill.com/viva/code/js/vivaclone.js"></script> -->
 	<script type="text/javascript">try{Typekit.load();}catch(e){};
 var imgImageLoader = new Responsive.ImageLoader("img[data-responsive]", Responsive.ImageLoader.setImgSource);
 var bgImageLoader = new Responsive.ImageLoader("[data-responsiveBg]", Responsive.ImageLoader.setBgSource);
