@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"  lang="nl-NL">
 <head itemscope itemtype="http://schema.org/WebSite">
@@ -126,7 +125,6 @@ ga("send","pageview");
 				</a>
 			</div>
 			<iframe id="iframe" frameborder="0" scrolling="no" seamless="seamless" src="https://huntmill.com/viva/" height="1140" width="960"></iframe>
-			<button id="testbutton">send stuff</button>
 		</div>
 	</div>
 </div>

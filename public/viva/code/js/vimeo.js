@@ -80,7 +80,6 @@ $(function() {
         }
         console.log('2. post() data: ');
         console.log(data);
-        var message = JSON.stringify(data);
         console.log('3. post() postMessage to player[0].contentWindow');
         console.log('4. post() player[0]:')
         console.log(player[0]);
