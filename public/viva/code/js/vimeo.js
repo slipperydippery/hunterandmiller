@@ -86,7 +86,9 @@ $(function() {
         console.log(player[0]);
         console.log('5. post() player[0].contentWindow:');
         console.log(player[0].contentWindow);
-        player[0].contentWindow.postMessage(data, playerOrigin);
+        console.log('playerOrigin: ');
+        console.log(playerOrigin);
+        player[0].contentWindow.postMessage(data, 'https://player.vimeo.com');
     }
 
     function onReady() {
