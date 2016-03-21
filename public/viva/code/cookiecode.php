@@ -10,7 +10,7 @@
 		if(!isset($_COOKIE[$cookie_name]))
 		{
 			$new_value = [$cookie_value => true];
-			setcookie($cookie_name, serialize($new_value), time() + (86400), "/" );
+			setcookie($cookie_name, serialize($new_value), 0, "/" );
 		}
 		else
 		{
@@ -18,7 +18,7 @@
 			if(!isset($this_cookie[$cookie_value]))
 			{
 				$this_cookie[$cookie_value] = true;
-				setcookie($cookie_name, serialize($this_cookie), time() + (86400), "/" );
+				setcookie($cookie_name, serialize($this_cookie), 0, "/" );
 			}
 		}
 	}
@@ -30,7 +30,7 @@
 		//Pull all the values from the cookie into $pages_visited
 		if(!isset($_COOKIE[$cookie_name]))
 		{
-			setcookie($cookie_name, serialize($pages_visited), time() + (86400), "/" );
+			setcookie($cookie_name, serialize($pages_visited), 0, "/" );
 		}
 		else
 		{
@@ -56,7 +56,7 @@
 					$new_cookie[$key] = true;
 				}
 			}
-			setcookie($cookie_name, serialize($new_cookie), time() + (86400), "/" );
+			setcookie($cookie_name, serialize($new_cookie), 0, "/" );
 		}
 	}
 
