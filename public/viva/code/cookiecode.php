@@ -18,8 +18,8 @@
 			if(!isset($this_cookie[$cookie_value]))
 			{
 				$this_cookie[$cookie_value] = true;
-				setcookie($cookie_name, serialize($this_cookie), 0, "/" );
 			}
+			setcookie($cookie_name, serialize($this_cookie), 0, "/" );
 		}
 	}
 
