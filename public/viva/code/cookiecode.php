@@ -8,9 +8,9 @@
 		//If cookie doens't exist, create it and enter cookie_value
 		//If it does exist, set cookie_value if not yet set. 
 		if(!isset($_COOKIE[$cookie_name]))
-		{
+		{	
 			$new_value = [$cookie_value => true];
-			setcookie($cookie_name, serialize($new_value), 1800, "/" );
+			setcookie($cookie_name, serialize($new_value), time()+1800, "/" );
 		}
 		else
 		{
@@ -19,7 +19,7 @@
 			{
 				$this_cookie[$cookie_value] = true;
 			}
-			setcookie($cookie_name, serialize($this_cookie), 0, "/" );
+				setcookie($cookie_name, serialize($this_cookie), time()+1800, "/" );
 		}
 	}
 
@@ -30,7 +30,7 @@
 		//Pull all the values from the cookie into $pages_visited
 		if(!isset($_COOKIE[$cookie_name]))
 		{
-			setcookie($cookie_name, serialize($pages_visited), 1800, "/" );
+			setcookie($cookie_name, serialize($pages_visited), time()+1800, "/" );
 		}
 		else
 		{
@@ -56,7 +56,7 @@
 					$new_cookie[$key] = true;
 				}
 			}
-			setcookie($cookie_name, serialize($new_cookie), 1800, "/" );
+			setcookie($cookie_name, serialize($new_cookie), time()+1800, "/" );
 		}
 	}
 
