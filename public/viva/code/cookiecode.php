@@ -10,7 +10,7 @@
 		if(!isset($_COOKIE[$cookie_name]))
 		{
 			$new_value = [$cookie_value => true];
-			setcookie($cookie_name, serialize($new_value), 0, "/" );
+			setcookie($cookie_name, serialize($new_value), "/" );
 		}
 		else
 		{
