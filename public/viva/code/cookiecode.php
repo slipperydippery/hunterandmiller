@@ -10,7 +10,7 @@
 		if(!isset($_COOKIE[$cookie_name]))
 		{
 			$new_value = [$cookie_value => true];
-			setcookie($cookie_name, serialize($new_value), "/" );
+			setcookie($cookie_name, serialize($new_value), 1800, "/" );
 		}
 		else
 		{
@@ -30,7 +30,7 @@
 		//Pull all the values from the cookie into $pages_visited
 		if(!isset($_COOKIE[$cookie_name]))
 		{
-			setcookie($cookie_name, serialize($pages_visited), 0, "/" );
+			setcookie($cookie_name, serialize($pages_visited), 1800, "/" );
 		}
 		else
 		{
@@ -56,7 +56,7 @@
 					$new_cookie[$key] = true;
 				}
 			}
-			setcookie($cookie_name, serialize($new_cookie), 0, "/" );
+			setcookie($cookie_name, serialize($new_cookie), 1800, "/" );
 		}
 	}
 
