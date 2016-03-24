@@ -231,6 +231,14 @@ img.pause {
     background: rgba(255, 255, 255, .5)
 }
 
+.vim-shortcuts span {
+    color: #ec174e;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: .8em;
+    display: inline-block;
+}
+
 .vim-shortcut h3 {
     position: absolute;
     bottom: 0;
