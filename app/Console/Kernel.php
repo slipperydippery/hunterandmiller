@@ -27,4 +27,8 @@ class Kernel extends ConsoleKernel
         $schedule->command('inspire')
                  ->hourly();
     }
+
+    protected $middleware = [
+        App\Http\Middleware\FrameHeadersMiddleware::class
+    ];
 }
